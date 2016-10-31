@@ -1,0 +1,21 @@
+plugin.tx_nwtdirectmailplaintext {
+	# stdWrap applied to the rendered plugin content
+	contentWrap {
+		stripHtml = 1
+	}
+	# Prefix list items with a character, empty for no prefix
+	listItemPrefix = -
+	# Add a br after one of the following tags start
+	breakAfterStartTags = p, li
+	# Add a br after one of the following tags end
+	breakAfterEndTags = ul
+	# Call the parse body function of tx_directmail_pi1 to make additional parsing
+	parseBody = 1
+}
+
+# Use this configuration to set a special template for tt_news or configure other plugins
+# [globalVar = GP:type = 99]
+# plugin.tt_news {
+# 	templateFile = fileadmin/templates/newsletter/news_plaintext.html
+# }
+# [end]
